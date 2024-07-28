@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./container.component.css']
 })
 export class ContainerComponent {
+  car: string[]; 
+  constructor() { 
+     this.car = ['Escavatore', 'Buldozzer', 'Pala gommata', 'Grader','Rullo','Autobetoniere','Gru','Terna','Minipala','Martello pneumatico']; 
+  }
 
 }
