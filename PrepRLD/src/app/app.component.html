@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="form-group">
+    <input type="text" #messageInput class="form-control" placeholder="Inserisci il messaggio di spam">
+    <input type="number" #countInput class="form-control mt-2" placeholder="Numero di ripetizioni">
+    <button class="btn btn-primary mt-2" (click)="generateSpam(messageInput.value, countInput.value)">Genera Spam</button>
+  </div>
+  
+  <ul class="list-group mt-3">
+    <li class="list-group-item" *ngFor="let message of spamMessages">
+      <app-spam [content]="message"></app-spam>
+    </li>
+  </ul>
+</div>
