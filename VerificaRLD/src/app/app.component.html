@@ -1,0 +1,10 @@
+<div class="container mt-4">
+  <h1>Tombola</h1>
+  <div class="form-group">
+    <label for="numero">Inserisci Numero:</label>
+    <input type="number" id="numero" class="form-control" [(ngModel)]="numero">
+  </div>
+  <button class="btn btn-primary mt-2" (click)="estraiNumero()">Estrai Numero</button>
+</div>
+
+<app-cartella [numeroEstratto]="ultimoNumeroEstratto" [numeriEstratti]="numeriEstratti"></app-cartella>
