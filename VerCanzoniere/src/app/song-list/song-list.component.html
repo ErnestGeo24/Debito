@@ -1,0 +1,12 @@
+<div *ngIf="songs.length > 0">
+    <h2>Lista delle Canzoni:</h2>
+    <ul>
+      <li *ngFor="let song of songs">
+        {{ song.title }}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="songs.length === 0">
+    <p>Nessuna canzone disponibile.</p>
+  </div>
+  

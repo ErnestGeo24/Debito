@@ -1,0 +1,18 @@
+<div style="text-align:center;">
+  <h1>Inserisci una Canzone</h1>
+  <div>
+    <label for="title">Titolo:</label>
+    <input id="title" type="text" [(ngModel)]="song.title"><br><br>
+
+    <label for="data_uscita">Data di Uscita:</label>
+    <input id="data_uscita" type="date" [(ngModel)]="song.data_uscita"><br><br>
+
+    <label for="durata">Durata (minuti):</label>
+    <input id="durata" type="number" [(ngModel)]="song.durata"><br><br>
+
+    <button (click)="addSong()">Salva Canzone</button>
+  </div>
+
+  <!-- Aggiungi il componente song-list -->
+  <app-song-list [songs]="songList"></app-song-list>
+</div>
